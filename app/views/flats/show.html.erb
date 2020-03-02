@@ -1,11 +1,11 @@
 <h1>this is show</h1>
    <%= @flat.name %>
-    <ul>
+<ul>
       <li><%= @flat.address %></li>
       <li><%= @flat.description %></li>
       <li><%= @flat.price_per_night %></li>
       <li><%= @flat.number_of_guests %></li>
-    </ul>
+ </ul>
 
 
 <%= link_to flats_path(@flat) do %>
@@ -19,5 +19,4 @@
 <%= link_to flat_path(@flat) do %>
 <div class ="btn btn-flat">Delete</div>
 <% end %>
-//redirect_to flats_path
 

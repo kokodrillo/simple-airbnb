@@ -36,12 +36,13 @@ class FlatsController < ApplicationController
   def destroy
     @flat = Flat.find(params[:id])
     @flat.destroy
+
     redirect_to flats_path
   end
 
+  private
 
-private
-def flat_params
-  params.require(:flat).permit(:name, :address, :description)
+  def flat_params
+    params.require(:flat).permit(:name, :address, :description)
+    end
   end
-end
