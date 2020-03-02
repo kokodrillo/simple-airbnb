@@ -1,11 +1,15 @@
-<h1>this is index</h1>
-<% @flats.each do |f| %>
-  <%= link_to f.name, flat_path(f) %>
-  <p><%= f.address %></p>
-  <p><%= f.description %></p>
-  <p><%= f.price_per_night %></p>
-  <p><%= f.number_of_guests %></p>
-<% end %>
-
-
-
+<h1>All of our flats</h1>
+<div class="cards">
+    <% @flats.each do |f| %>
+      <div class="card-trip">
+          <div>
+            <%= link_to f.name, flat_path(f) %>
+            <p><%= f.address %></p>
+          </div>
+        <div class="card-trip-infos">
+          <h2 class="card-trip-pricing"><p>€<%= f.price_per_night %></p></h2>
+          <p>person <%= f.number_of_guests %></p>
+        </div>
+      </div>
+  <% end %>
+</div>
