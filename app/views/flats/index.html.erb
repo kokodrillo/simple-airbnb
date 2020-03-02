@@ -1,6 +1,7 @@
 <h1>this is index</h1>
 <% @flats.each do |f| %>
-  <p><%= f.name %></p>
+<%= link_to f.name, flat_path(f) %>
+
   <p><%= f.address %></p>
   <p><%= f.description %></p>
   <p><%= f.price_per_night %></p>
@@ -8,4 +9,5 @@
 
 <% end %>
 #add link to show page
+
 
