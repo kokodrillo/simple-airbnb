@@ -5,6 +5,7 @@ class FlatsController < ApplicationController
   end
 
   def show
+    @flat = Flat.find(params[:id])
   end
 
   def new
@@ -21,12 +22,22 @@ class FlatsController < ApplicationController
   end
 
   def update
+    @flat = Flat.find(params[:id])
+    if @flat.update(flat_params)
+      redirect_to flat_path
+    else
+      render :edit
+    end
   end
 
   def edit
+    @flat = Flat.find(params[:id])
   end
 
   def destroy
+    @flat = Flat.find(params[:id])
+    @flat.destroy
+    redirect_to flats_path
   end
 
 
