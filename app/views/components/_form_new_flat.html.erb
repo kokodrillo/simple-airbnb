@@ -1,12 +1,22 @@
-<%= simple_form_for(@flat) do |f| %>
+<div class="form_trips">
+<%= form_for(@flat) do |f| %>
 
-              <%= f.input :name %>
-              <%= f.input :address %>
-              <%= f.input :description %>
-              <%= f.input :price_per_night %>
-              <%= f.input :number_of_guests %>
+              <%= f.label :name %>
+              <%= f.text_field :name %>
+
+              <%= f.label :address %>
+              <%= f.text_field :address %>
+
+              <%= f.label :description %>
+              <%= f.text_field :description %>
+
+              <%= f.label :price_per_night %>
+              <%= f.text_field :price_per_night %>
+
+              <%= f.label :number_of_guests %>
+              <%= f.text_field :number_of_guests %>
 
 
-          <div class="input btn"><%= f.button :submit, "New activity" %></div>
-          </div>
+          <div class="input btn"><%= f.submit %></div>
   <% end %>
+</div>
