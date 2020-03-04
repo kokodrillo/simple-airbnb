@@ -4,14 +4,18 @@
     <% @flats.each do |f| %>
       <div class="card-trip">
           <div>
-            <%= link_to f.name, flat_path(f) %>
+            <h5> <%= f.name %></h5>
             <p><%= f.address %></p>
           </div>
         <div class="card-trip-infos">
           <h2 class="card-trip-pricing"><p>€<%= f.price_per_night %></p></h2>
-          <p>person <%= f.number_of_guests %></p>
+          <p class="guests">person <%= f.number_of_guests %></p>
         </div>
+          <%= link_to "More info", flat_path(f)%>
+          <%= link_to "Edit", edit_flat_path(f)%>
+          <%= link_to "Remove", flats_path(f)%>
       </div>
   <% end %>
 </div>
+
 

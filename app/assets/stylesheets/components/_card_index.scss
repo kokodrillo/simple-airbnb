@@ -1,9 +1,11 @@
 .card-trip {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 20px;
-  border-radius: 5px;
+ overflow: hidden;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    width: 270px;
+
 }
 
 .card-trip > img {
@@ -43,8 +45,7 @@
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-row-gap: 50px;
   padding: 30px
 }
 
