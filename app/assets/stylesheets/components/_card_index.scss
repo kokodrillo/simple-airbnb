@@ -8,18 +8,39 @@
 margin-top: 10px;
 }
 
+.orange{
+color: orange;
+}
+
+.red{
+color: red;
+}
+
+.flat-name{
+padding: 10px;
+}
+
+.flat-address{
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.guests{
+padding-right: 40px;
+}
+
 .card-trip {
   overflow: hidden;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 20px;
-  border-radius: 4px;
+  box-shadow: 0 10px 19px rgba(136, 129, 129, 0.2);
+  border-radius: 2.5px;
 }
 
 .card-trip > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
+  border-radius: 2.5px;
 }
 
 .card-trip h2 {
@@ -35,17 +56,32 @@ margin-top: 10px;
 }
 
 .card-trip .card-trip-infos {
-  padding: 16px;
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  padding-bottom: 15px;
 }
+
+.links{
+  padding-left: 10px;
+  padding-bottom: 15px;
+  padding-top: px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  padding-top: 15px;
+  border-top: 1px solid #f1ecec;
+  .orange, .red {
+  padding-left: 15px;
+  }
+}
+
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-gap: 30px;
   padding: 20px;
 }
 
@@ -73,18 +109,15 @@ margin-top: 10px;
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 }
 
-.container-cards{
-  background-color: #f5f4f4;
-}
 
