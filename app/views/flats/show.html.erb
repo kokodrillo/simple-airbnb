@@ -1,22 +1,12 @@
 <h1>this is show</h1>
-   <%= @flat.name %>
-<ul>
-      <li><%= @flat.address %></li>
-      <li><%= @flat.description %></li>
-      <li><%= @flat.price_per_night %></li>
-      <li><%= @flat.number_of_guests %></li>
- </ul>
+<%= @flat.name %>
 
+<p><%= @flat.address %></p>
+<p><%= @flat.description %></p>
+<p><%= @flat.price_per_night %></p>
+<p><%= @flat.number_of_guests %></p>
 
-<%= link_to flats_path(@flat) do %>
-<div class ="btn btn-flat">Back</div>
-<% end %>
-
-<%= link_to edit_flat_path(@flat) do %>
-<div class ="btn btn-flat">Edit</div>
-<% end %>
-
-<%= link_to flats_path(@flat) do %>
-<div class ="btn btn-flat">Delete</div>
-<% end %>
+<%= link_to "Back", flats_path(@flat)%>
+<%= link_to "Edit", edit_flat_path(@flat)%>
+<%= link_to "Remove", flats_path(@flat)%>
 

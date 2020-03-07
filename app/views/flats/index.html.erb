@@ -1,17 +1,25 @@
 
-<h1 class="title">All of our flats</h1>
-<div class="cards">
-    <% @flats.each do |f| %>
-      <div class="card-trip">
-          <div>
-            <%= link_to f.name, flat_path(f) %>
-            <p><%= f.address %></p>
+<div class="container-cards">
+  <h1 class="title">All of our flats</h1>
+    <div class="cards">
+      <% @flats.each do |f| %>
+        <div class="card-trip">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+            <div>
+              <h5 class="flat-name"> <%= f.name %></h5>
+              <p><%= f.address %></p>
+            </div>
+          <div class="card-trip-infos">
+            <h2 class="card-trip-pricing"><p>€<%= f.price_per_night %></p></h2>
+            <p class="guests">person <%= f.number_of_guests %></p>
+          <!-- </div>
+          <div class="links"> -->
+            <p><%= link_to "More info", flat_path(f)%></p>
+            <p><%= link_to "Edit", edit_flat_path(f)%></p>
+            <p><%= link_to "Remove", flats_path(f)%></p>
           </div>
-        <div class="card-trip-infos">
-          <h2 class="card-trip-pricing"><p>€<%= f.price_per_night %></p></h2>
-          <p>person <%= f.number_of_guests %></p>
         </div>
-      </div>
-  <% end %>
+    <% end %>
+    </div>
 </div>
 
