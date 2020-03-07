@@ -1,6 +1,7 @@
 
+<div class="container-cards">
 <h1 class="title">All of our flats</h1>
-<div class="cards">
+  <div class="cards">
     <% @flats.each do |f| %>
       <div class="card-trip">
           <div>
@@ -11,11 +12,13 @@
           <h2 class="card-trip-pricing"><p>€<%= f.price_per_night %></p></h2>
           <p class="guests">person <%= f.number_of_guests %></p>
         </div>
-          <%= link_to "More info", flat_path(f)%>
-          <%= link_to "Edit", edit_flat_path(f)%>
-          <%= link_to "Remove", flats_path(f)%>
+        <div class="links">
+          <p><%= link_to "More info", flat_path(f)%></p>
+          <p><%= link_to "Edit", edit_flat_path(f)%></p>
+          <p><%= link_to "Remove", flats_path(f)%></p>
+        </div>
       </div>
   <% end %>
+  </div>
 </div>
-
 
