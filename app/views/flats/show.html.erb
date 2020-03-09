@@ -1,12 +1,17 @@
-<h1>this is show</h1>
-<%= @flat.name %>
+<div class="card">
+  <div class="card-trip-show">
+    <h3><%= @flat.name %></h3>
 
-<p><%= @flat.address %></p>
-<p><%= @flat.description %></p>
-<p><%= @flat.price_per_night %></p>
-<p><%= @flat.number_of_guests %></p>
+    <p><%= @flat.address %></p>
+    <p><%= @flat.description %></p>
+    <div class="card-trip-infos">
+      <h2 class="card-trip-pricing"><p>€<%= @flat.price_per_night %></p></h2>
+      <h2 class="guests"><p>people <%= @flat.number_of_guests %></p></h2>
+    </div>
 
-<%= link_to "Back", flats_path(@flat)%>
-<%= link_to "Edit", edit_flat_path(@flat)%>
-<%= link_to "Remove", flats_path(@flat)%>
+    <%= link_to "Back", flats_path(@flat)%>
+    <%= link_to "Edit", edit_flat_path(@flat), class: "orange"%>
+    <%= link_to "Remove", flats_path(@flat), class: "red"%>
+  </div>
+</div>
 
