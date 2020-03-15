@@ -1,0 +1,48 @@
+.form_trips{
+  box-shadow: 0 10px 19px rgba(136, 129, 129, 0.2);
+    margin: 40px auto;
+    background-color: #822ce0;
+    padding: 30px;
+    border-radius: 7px;
+    width: 500px;
+    height: 660px;
+    input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    width: 100%;
+    color: #ffffff91;
+
+     }
+    label{
+      display: inline-block;
+      color:white;
+    }
+    p{
+      font-size:18px;
+      font-weight: bold;
+      padding-top: 20px;
+      display: table-cell;
+    }
+
+}
+
+.button{
+  box-shadow: 0 10px 19px rgba(136, 129, 129, 0.2);
+  background-color: #000000;
+  width: 100px;
+  border-radius: 7px;
+  color: white;
+  position: relative;
+  top: 30px;
+  input{
+    border:none;
+    color:white;
+  }
+}
+
+.title{
+  margin: 0 auto;
+}
