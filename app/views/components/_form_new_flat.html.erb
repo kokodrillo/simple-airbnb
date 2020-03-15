@@ -2,30 +2,30 @@
 <%= form_for(@flat) do |f| %>
 
             <p><%= f.label :name%></p>
-            <div class="name">
+            <div class="text">
               <%= f.text_field :name %>
             </div>
 
             <p><%= f.label :address%></p>
-            <div class="ddress">
+            <div class="text">
               <%= f.text_field :address %>
             </div>
 
             <p><%= f.label :description%></p>
-            <div class="description">
+            <div class="text">
               <%= f.text_field :description %>
             </div>
 
             <p><%= f.label :price_per_night%></p>
-            <div class="price">
+            <div class="text">
               <%= f.text_field :price_per_night %>
             </div>
 
-            <p><%= f.label :number_of_guests%></p>
-            <div class="guests">
-              <%= f.text_field :number_of_guests%>
+            <p><%= f.label :number_of_guests %></p>
+            <div class="text">
+              <%= f.text_field :number_of_guests %>
             </div>
 
-          <div class="input btn"><%= f.submit %></div>
+          <div class="button"><%= f.submit %></div>
   <% end %>
 </div>

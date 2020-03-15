@@ -1,17 +1,24 @@
 .form_trips{
     margin: 0 auto;
-    border: 1px solid #e8e5e5;
+    background-color: #363a3c;
     padding: 30px;
-    border-radius: 2.5px;
+    border-radius: 7px;
     width: 500px;
+    height: 660px;
     input{
-          width: 400px;
-          padding:5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    width: 100%;
+    color: #ffffff91;
+
+
     }
     label{
-    display: inline-block;
-    // padding-bottom: 10px 0;
-    // padding: 10px 0;
+      display: inline-block;
+      color:white;
     }
     p{
       font-size:18px;
@@ -21,4 +28,14 @@
     }
 }
 
-
+.button{
+  background-color: #00d0ff;
+  width: 100px;
+  border-radius: 8px;
+  color: white;
+  position: relative;
+  top: 30px;
+  input{
+    border:none;
+  }
+}
