@@ -1,5 +1,5 @@
 .form_trips{
-    margin: 0 auto;
+    margin: 40px auto;
     background-color: #363a3c;
     padding: 30px;
     border-radius: 7px;
@@ -13,9 +13,7 @@
     background: transparent;
     width: 100%;
     color: #ffffff91;
-
-
-    }
+     }
     label{
       display: inline-block;
       color:white;
@@ -26,16 +24,21 @@
       padding-top: 20px;
       display: table-cell;
     }
+
 }
 
 .button{
   background-color: #00d0ff;
   width: 100px;
-  border-radius: 8px;
+  border-radius: 7px;
   color: white;
   position: relative;
   top: 30px;
   input{
     border:none;
   }
+}
+
+.title{
+  margin: 0 auto;
 }
