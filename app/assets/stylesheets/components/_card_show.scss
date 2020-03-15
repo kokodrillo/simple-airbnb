@@ -5,35 +5,50 @@
   border-radius: 2.5px;
   padding:50px;
   font-size: 35px;
-
   margin: 50px auto;
-  .card-trip-infos{
-  padding: 10px;
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  padding-bottom: 15px;
   p{
-    padding-right: 40px;
-    }
+    padding-bottom: 20px;
+  }
 
+#card-trip-infos{
+  padding: 10px 0;
+    p{
+      padding-right: 40px;
+      }
   }
 
   h3{
   font-weight: bold;
   margin-bottom:20px;
+  color: #7f7c7c;
   }
 
   p{
     font-size: 15px;
-  opacity: .7;
-  margin: 0;
+    opacity: .7;
+    margin: 0;
   }
   a{
     font-size:15px;
   }
 }
 
+.bottom-info{
+  border-top: 1px solid #f1ecec;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-guest{
+  display:flex;
+  padding-top:30px;
+  position: relative;
+  left: 40px;
+}
+
+.guests{
+  margin-left: 10px;
+}
 
 @media (min-width: 100px) and (max-width: 575px) {
   .card-trip-show {
